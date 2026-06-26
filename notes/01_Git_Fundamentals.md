@@ -2,7 +2,7 @@
 
 ## Purpose
 Git is a version control system that records the history of a project by creating snapshots called commits. It allows you to track changes, recover from mistakes, and collaborate with others. Git runs locally on your computer, while GitHub is a service that hosts Git repositories online.
----
+
 ## Key Concepts
 ### Repository
 A project that is tracked by Git.
@@ -10,7 +10,7 @@ A project that is tracked by Git.
 ### Commit
 A permanent snapshot of the staged changes in a project.
 
-### Working Direcotry
+### Working Directory
 The files you are currently editing.
 
 ### Staging Area
