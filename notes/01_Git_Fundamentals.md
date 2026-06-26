@@ -1,7 +1,7 @@
 # Git Fundamentals
 
 ## Purpose
-Git is a version control system that records the history of a project by creating snapshots called commits. It allows you to track changes, recover from mistakes, and collaborate wiht others. Git runs locally on your computer, while GitHub is a service that hosts Git repositories online.
+Git is a version control system that records the history of a project by creating snapshots called commits. It allows you to track changes, recover from mistakes, and collaborate with others. Git runs locally on your computer, while GitHub is a service that hosts Git repositories online.
 ---
 ## Key Concepts
 ### Repository
@@ -21,17 +21,17 @@ An independent line of development.
 
 ### Remote
 A copy of your repository hosted on another server, such as GitHub.
----
+
 ## Mental Model
 Git manages changes by moving them through three stages.
 
+```text
 Working Directory
-    |
-    v
+    ↓
 Staging Area
-    |
-    v
+    ↓
 Repository
+```
 
 ### Wroking Directory
 Where you actively edit your files.
