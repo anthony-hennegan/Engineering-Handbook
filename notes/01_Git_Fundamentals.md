@@ -1,5 +1,5 @@
 # Git Fundamentals
-
+Last Updated: 2026-06-25
 ## Purpose
 Git is a version control system that records the history of a project by creating snapshots called commits. It allows you to track changes, recover from mistakes, and collaborate with others. Git runs locally on your computer, while GitHub is a service that hosts Git repositories online.
 
