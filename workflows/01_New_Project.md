@@ -1,4 +1,3 @@
-```markdown
 # New Project Workflow
 
 ## Phase 1 - Project Planning
@@ -51,4 +50,4 @@
 - [ ] Update `CHANGELOG.md`.
 - [ ] Remove completed items from `TODO.md` or archive the list.
 - [ ] Push the final changes.
-```
+
