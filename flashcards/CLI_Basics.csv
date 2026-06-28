@@ -1,0 +1,21 @@
+What is the command line?,A text-based interface for interacting with the operating system.,Concept,Beginner,002
+What is a directory?,Another name for a folder.,Concept,Beginner,002
+What is the Current Working Directory (CWD)?,The directory you are currently working in.,Concept,Beginner,002
+What is a path?,The location of a file or directory within the file system.,Concept,Beginner,002
+What command displays the Current Working Directory?,pwd,Command,Beginner,002
+What command lists the contents of the current directory?,ls,Command,Beginner,002
+What command changes the current working directory?,cd,Command,Beginner,002
+What command creates a new directory?,mkdir,Command,Beginner,002
+What command creates a new empty file?,touch,Command,Beginner,002
+What command copies files or directories?,cp,Command,Beginner,002
+What command moves or renames files or directories?,mv,Command,Beginner,002
+What command removes files or directories?,rm,Command,Beginner,002
+You want to know where you are in the file system. What command do you use?,pwd,Scenario,Beginner,002
+You want to see the contents of your current directory. What command do you use?,ls,Scenario,Beginner,002
+You need to move into a different directory. What command do you use?,cd,Scenario,Beginner,002
+You need to create a new folder named projects. What command do you use?,mkdir projects,Scenario,Beginner,002
+You need to create a new empty file named main.py. What command do you use?,touch main.py,Scenario,Beginner,002
+You want to rename notes.txt to commands.txt. What command do you use?,mv notes.txt commands.txt,Scenario,Beginner,002
+You want to make a copy of commands.txt named backup.txt. What command do you use?,cp commands.txt backup.txt,Scenario,Beginner,002
+You want to permanently delete backup.txt. What command do you use?,rm backup.txt,Scenario,Beginner,002
+
