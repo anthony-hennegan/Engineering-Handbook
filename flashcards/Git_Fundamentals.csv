@@ -1,0 +1,30 @@
+What command initializes a new Git repository?,git init,Command,Beginner,001
+What command displays the current status of a Git repository?,git status,Command,Beginner,001
+What command stages all modified and new files?,git add .,Command,Beginner,001
+What command stages a specific file?,git add <filename>,Command,Beginner,001
+What command creates a commit?,git commit -m "message",Command,Beginner,001
+What command shows unstaged changes?,git diff,Command,Beginner,001
+What command shows staged changes?,git diff --staged,Command,Beginner,001
+What command displays a condensed commit history?,git log --oneline,Command,Beginner,001
+What command discards changes made to a file since the last commit?,git restore <filename>,Command,Beginner,001
+What command removes a file from the staging area?,git restore --staged <filename>,Command,Beginner,001
+What command displays configured remote repositories?,git remote -v,Command,Beginner,001
+What command uploads commits to GitHub?,git push,Command,Beginner,001
+What command downloads changes from GitHub?,git pull,Command,Beginner,001
+What command copies a remote repository to your computer?,git clone <url>,Command,Beginner,001
+What is a Git repository?,A project whose history is tracked by Git.,Concept,Beginner,001
+What is a commit?,A permanent snapshot of the staged changes in a project.,Concept,Beginner,001
+What is the Working Directory?,The files you are actively editing.,Concept,Beginner,001
+What is the Staging Area?,The place where changes are prepared for the next commit.,Concept,Beginner,001
+What is the Repository?,The permanent history of committed snapshots.,Concept,Beginner,001
+What is the difference between Git and GitHub?,Git is the local version control system; GitHub hosts Git repositories online.,Concept,Beginner,001
+What are the three Git areas?,Working Directory → Staging Area → Repository,Concept,Beginner,001
+You modified five files and want to include all of them in your next commit. What command do you use?,git add .,Scenario,Beginner,001
+You only want to stage main.py. What command do you use?,git add main.py,Scenario,Beginner,001
+You want to review your edits before staging them. What command do you use?,git diff,Scenario,Beginner,001
+You want to verify exactly what will be included in your next commit. What command do you use?,git diff --staged,Scenario,Beginner,001
+You accidentally modified a file and want to discard the changes. What command do you use?,git restore <filename>,Scenario,Beginner,001
+You accidentally staged the wrong file. What command do you use?,git restore --staged <filename>,Scenario,Beginner,001
+You finished a logical unit of work and want to save a snapshot. What command do you use?,git commit -m "message",Scenario,Beginner,001
+You want to back up your latest commits to GitHub. What command do you use?,git push,Scenario,Beginner,001
+What key exits the pager used by git diff and git log?,q,CLI,Beginner,001
