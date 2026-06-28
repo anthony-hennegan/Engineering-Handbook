@@ -10,7 +10,6 @@
 - [ ] Create `CHANGELOG.md`.
 - [ ] Create `design.md` *(if needed)*.
 
----
 
 ## Phase 2 - Environment Setup
 
@@ -19,7 +18,6 @@
 - [ ] Create `.gitignore`.
 - [ ] Create `requirements.txt`.
 
----
 
 ## Phase 3 - Version Control
 
@@ -30,7 +28,6 @@
 - [ ] Add the remote repository.
 - [ ] Push the initial commit.
 
----
 
 ## Phase 4 - Development
 
@@ -41,7 +38,6 @@
 - [ ] Commit logical units of work.
 - [ ] Push changes regularly.
 
----
 
 ## Phase 5 - Project Completion
 

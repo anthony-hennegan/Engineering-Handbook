@@ -10,7 +10,6 @@
 - [ ] Review `REQUIREMENTS.md`.
 - [ ] Choose one clear goal for the session.
 
----
 
 ## Phase 2 - Study Warmup
 
@@ -18,7 +17,6 @@
 - [ ] Review yesterday's notes if needed.
 - [ ] Complete one short drill if available.
 
----
 
 ## Phase 3 - Development
 
@@ -28,7 +26,6 @@
 - [ ] Read error messages carefully.
 - [ ] Update `TODO.md` as tasks change.
 
----
 
 ## Phase 4 - Review Changes
 
@@ -39,7 +36,6 @@
 - [ ] Review changed files.
 - [ ] Remove unnecessary debug code.
 
----
 
 ## Phase 5 - Commit and Push
 
@@ -48,7 +44,6 @@
 - [ ] Commit one logical change.
 - [ ] Push changes to GitHub.
 
----
 
 ## Phase 6 - End Session
 
