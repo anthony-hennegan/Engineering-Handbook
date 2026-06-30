@@ -23,11 +23,17 @@ Practice basic command line navigation and file management without using the gra
 ---
 
 ## Reflection
+Attempt:
+1
 
 Time to Complete:
+5:32
 
 Commands I Forgot:
-
+rm -r
+cd ..
 Mistakes I Made:
-
+I didn't have the syntax for removing directories and going back directories.
 Notes:
+Updated CLI notes with rm -r, rm -ri, and cd .. commands. 
+Added new commands to flash cards
