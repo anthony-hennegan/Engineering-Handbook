@@ -18,4 +18,6 @@ You need to create a new empty file named main.py. What command do you use?,touc
 You want to rename notes.txt to commands.txt. What command do you use?,mv notes.txt commands.txt,Scenario,Beginner,002
 You want to make a copy of commands.txt named backup.txt. What command do you use?,cp commands.txt backup.txt,Scenario,Beginner,002
 You want to permanently delete backup.txt. What command do you use?,rm backup.txt,Scenario,Beginner,002
-
+How do you move to the parent directory?,cd ..,Command,Beginner,002
+What command removes a directory and its contents?,rm -r <directory>,Command,Beginner,002
+What command removes a directory recursively and asks for confirmation?,rm -ri <directory>,Command,Beginner,002

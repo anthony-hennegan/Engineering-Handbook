@@ -42,13 +42,17 @@ Most terminal commands operate relative to your Current Working Directory (CWD).
 | `pwd` | Display the current working directory. | pwd |
 | `ls` | List the files and directories in the current working directory. | ls |
 | `cd` | Change the current working directory. | cd directory_name |
+| `cd ..` | Go up one folder | cd .. |
+| `cd ../..` | Go up two folders | cd ../.. |
 | `mkdir` | Create a new directory. | mkdir directory_name |
 | `touch` | Create a new empty file. | touch file.txt |
 | `cp` | Copy files and renames it. | cp report.txt backup_report.txt |
 | `cp` | Copy files into a folder. | cp report.txt /home/user/documents/|
 | `mv` | Move files. | mv my_file.txt /path/to/destination/folder/
 | `mv` | Rename files or directories. | mv my_file.txt /path/to/destination/folder/
-| `rm` | Remove files or directories. | mv file1.txt file2.txt /path/to/destination/
+| `rm` | Remove files | rm file1.txt|
+| `rm -r` | Remove directory (no prompt) | rm -r directory_name|
+| `rm -ri` | Remove directory with prompt | rm -ri directory_name -> y or n|
 
 
 ## Best Practices
