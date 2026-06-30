@@ -1,4 +1,4 @@
-```markdown
+
 # Coding Dojo Session Workflow
 
 ## Phase 1 - Warm Up
@@ -39,4 +39,4 @@
 - [ ] Commit one logical unit of work.
 - [ ] Push to GitHub.
 - [ ] Decide on the objective for the next session.
-```
+
