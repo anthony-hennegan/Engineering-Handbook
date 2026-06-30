@@ -1,6 +1,7 @@
 
 # Coding Dojo Session Workflow
-Last Updated: 06-30-2026
+Last Updated: 6-30-2026
+
 ## Phase 1 - Warm Up
 
 - [ ] Complete all due Anki reviews.
@@ -18,15 +19,25 @@ Last Updated: 06-30-2026
 
 ---
 
-## Phase 3 - Build
+## Phase 3 - Practice
 
-- [ ] Apply the new concept to the project.
-- [ ] Test the code frequently.
-- [ ] Ask questions as they arise.
+- [ ] Create or open the current lesson exercise.
+- [ ] Experiment with the new concept.
+- [ ] Predict the program's behavior before running it.
+- [ ] Run the program frequently.
+- [ ] Ask questions and refine your understanding.
 
 ---
 
-## Phase 4 - Reinforce
+## Phase 4 - Build
+
+- [ ] Apply the new concept to the project.
+- [ ] Test the project frequently.
+- [ ] Update `TODO.md` as work progresses.
+
+---
+
+## Phase 5 - Reinforce
 
 - [ ] Create flashcards.
 - [ ] Complete the drill without notes.
@@ -34,9 +45,11 @@ Last Updated: 06-30-2026
 
 ---
 
-## Phase 5 - Close Session
+## Phase 6 - Close Session
 
 - [ ] Commit one logical unit of work.
 - [ ] Push to GitHub.
 - [ ] Decide on the objective for the next session.
+
+
 
