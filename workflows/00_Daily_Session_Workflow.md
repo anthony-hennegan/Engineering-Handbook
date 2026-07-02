@@ -26,6 +26,8 @@ Last Updated: 6-30-2026
 - [ ] Predict the program's behavior before running it.
 - [ ] Run the program frequently.
 - [ ] Ask questions and refine your understanding.
+- [ ] Create or open lesson drill. 
+- [ ] Run through the drill and record time to complete
 
 ---
 
