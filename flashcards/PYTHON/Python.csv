@@ -1,0 +1,18 @@
+What is a Python program?,A set of instructions written in the Python programming language that tells the computer what to do.,Concept,Beginner,003
+How does Python execute a program?,Python executes statements one at a time from top to bottom unless directed otherwise.,Concept,Beginner,003
+What is a statement?,A single instruction that tells Python to perform an action.,Concept,Beginner,003
+What is a variable?,A variable is a named location that stores a value so it can be used later in a program.,Concept,Beginner,003
+What is a value?,A value is a piece of information stored or used by a program.,Concept,Beginner,003
+What is a data type?,A data type is an attribute of a value that tells Python how to store, interpret, and operate on that value.,Concept,Intermediate,003
+What relationship exists between a variable and a value?,A variable refers to a value.,Concept,Intermediate,003
+What happens when a variable is reassigned?,The variable refers to a new value from that point forward in the program.,Concept,Intermediate,003
+When does Python evaluate the value of a variable?,When the statement using the variable is executed.,Concept,Intermediate,003
+Why does the first print(name) output "Anthony" before name is reassigned?,Because Python executes the first print() before the reassignment statement.,Scenario,Intermediate,003
+Why does changing one variable not affect another variable?,Each variable stores its own reference to a value and is independent unless explicitly related.,Concept,Intermediate,003
+What character does print() append by default?,\n (newline),Command,Beginner,003
+Why does each print() statement appear on a separate line?,Because print() appends a newline character (\n) after printing by default.,Scenario,Beginner,003
+Why does print(name, age) display both values on one line?,Because they are printed by a single print() call before one newline is appended.,Scenario,Beginner,003
+What is the most important execution rule learned in this lesson?,Python executes one statement at a time from top to bottom.,Concept,Beginner,003
+Should derived information usually be stored as a variable?,No. If it can be calculated from existing data, it is usually better to derive it when needed.,Design,Intermediate,003
+What is application state?,The information that represents the current condition of the application while it is running.,Design,Intermediate,003
+What question should you ask before creating a new variable?,Does this information need to be stored, or can it be derived from other information?,Design,Intermediate,003
