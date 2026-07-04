@@ -1,0 +1,16 @@
+What does input() do in Python?,"Displays a prompt, pauses the program, waits for the user to type a response, and returns that response.",Concept,Beginner,004
+What data type does input() always return?,str,Concept,Beginner,004
+What happens when Python reaches an input() statement?,"The program pauses and waits for the user to type a response and press Enter.",Concept,Beginner,004
+What is the purpose of the prompt inside input()?,"To display a message telling the user what information to enter.",Concept,Beginner,004
+What does this code do: name = input(""What is your name? "")?,"It asks the user for their name and stores the response as a string in the variable name.",Code Reading,Beginner,004
+If the user types 20 into input(), what value does Python store?,"""20"" as a string.",Concept,Beginner,004
+Why does it matter that input() returns a string?,"Because numbers entered by the user must be converted before doing math with them.",Concept,Beginner,004
+What function checks the data type of a value in Python?,type(),Command,Beginner,004
+How can you print the data type of a variable?,print(type(variable_name)),Command,Beginner,004
+You want to ask the user for their name. What function do you use?,input(),Scenario,Beginner,004
+You want to store the user's name in a variable. What should the code include?,"A variable assignment using input(), such as name = input(""What is your name? "")",Scenario,Beginner,004
+You want to confirm that input() returned a string. What can you print?,print(type(variable_name)),Scenario,Beginner,004
+What makes a program interactive?,"The program can receive information from the user and respond to it.",Concept,Beginner,004
+What was the main project use of input() in Lesson 004?,"Ask the reader for their name and whether they want to view the book selection.",Project,Beginner,004
+Should Lesson 004 use if/else logic to respond to user input?,No. Lesson 004 focuses only on receiving and storing input.,Project,Beginner,004
+What should you avoid when applying input() to the project too early?,"Jumping ahead into conditionals, menus, or complex logic before the lesson covers them.",Design,Beginner,004

@@ -1,4 +1,4 @@
-# Lesson 003 - Python Fundamentals
+# Python Fundamentals
 
 ## Purpose
 
