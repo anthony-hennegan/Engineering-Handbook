@@ -1,0 +1,25 @@
+What does a conditional allow a program to do?,Choose which code runs based on a true or false condition,Concept,Beginner,005
+What does if do in Python?,It checks a condition and runs its block when the condition is true,Concept,Beginner,005
+What does else do in Python?,It runs when none of the previous conditions were true,Concept,Beginner,005
+What does elif do in Python?,It checks another condition after a previous if condition was false,Concept,Beginner,005
+What is a condition?,An expression that evaluates to True or False,Concept,Beginner,005
+What does answer == yes check?,It checks whether answer is equal to yes,Code Reading,Beginner,005
+Why does Python not run every branch in an if elif else chain?,Python runs only the first block with a true condition,Concept,Beginner,005
+What happens if the if condition is false and there is an else block?,Python skips the if block and runs the else block,Concept,Beginner,005
+Why is elif useful?,It lets the program check more than one specific condition,Concept,Beginner,005
+What should else usually handle?,Unexpected cases or a final default response,Design,Beginner,005
+Are Python string comparisons exact?,Yes strings must match exactly,Concept,Beginner,005
+Does Yes match yes in Python?,No because uppercase and lowercase letters are different,Scenario,Beginner,005
+Does yes with a space match yes in Python?,No because the space makes it a different string,Scenario,Beginner,005
+What defines a code block in Python?,Indentation,Concept,Beginner,005
+Why does indentation matter in Python?,It tells Python which statements belong to the same block,Concept,Beginner,005
+Can a boolean variable be used directly in an if statement?,Yes because it already evaluates to True or False,Concept,Beginner,005
+Why does if is_open not need == True?,Because is_open is already a boolean value,Code Reading,Beginner,005
+What happens when is_open is False in an if else statement?,Python skips the if block and runs the else block,Scenario,Beginner,005
+What was the project goal for Lesson 005?,Use conditionals to respond to the reader choice,Project,Beginner,005
+What should the Library project do when the user types yes?,Print a message showing that the book selection will be shown,Project,Beginner,005
+What should the Library project do when the user types no?,Print a polite goodbye message,Project,Beginner,005
+What should the Library project do for an unexpected response?,Ask the user to type yes or no,Project,Beginner,005
+Why should variable names match the meaning of the value?,Clear names make the program easier to understand,Design,Beginner,005
+Why is library_open_response clearer than library_open for user input?,It shows the value is a text response from the user,Design,Beginner,005
+Why is is_open a good name for a boolean variable?,It sounds like a true or false condition,Design,Beginner,005

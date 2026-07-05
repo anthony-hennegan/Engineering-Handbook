@@ -12,5 +12,4 @@ You want to store the user's name in a variable. What should the code include?,"
 You want to confirm that input() returned a string. What can you print?,print(type(variable_name)),Scenario,Beginner,004
 What makes a program interactive?,"The program can receive information from the user and respond to it.",Concept,Beginner,004
 What was the main project use of input() in Lesson 004?,"Ask the reader for their name and whether they want to view the book selection.",Project,Beginner,004
-Should Lesson 004 use if/else logic to respond to user input?,No. Lesson 004 focuses only on receiving and storing input.,Project,Beginner,004
 What should you avoid when applying input() to the project too early?,"Jumping ahead into conditionals, menus, or complex logic before the lesson covers them.",Design,Beginner,004
