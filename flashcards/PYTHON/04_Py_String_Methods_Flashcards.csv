@@ -1,0 +1,23 @@
+What does lower do to a string?,It returns a new string with all letters lowercase,Concept,Beginner,006
+What does upper do to a string?,It returns a new string with all letters uppercase,Concept,Beginner,006
+What does strip do to a string?,It returns a new string with whitespace removed from the beginning and end,Concept,Beginner,006
+What does title do to a string?,It returns a new string with the first letter of each word capitalized,Concept,Beginner,006
+Do string methods change the original string automatically?,No they return a new string,Concept,Beginner,006
+How do you keep the result of a string method?,Store the result in a variable,Concept,Beginner,006
+Why does answer.lower not permanently change answer?,Because the returned string was not stored,Code Reading,Beginner,006
+What does answer = answer.lower do?,It stores the lowercase version back into answer,Code Reading,Beginner,006
+What does strip remove?,Whitespace from the beginning and end of a string,Concept,Beginner,006
+Does strip remove spaces from the middle of a string?,No it only removes whitespace from the beginning and end,Concept,Beginner,006
+What does method chaining mean?,Calling multiple methods one after another,Concept,Beginner,006
+What does answer.strip().lower do?,It removes outer whitespace then converts the result to lowercase,Code Reading,Beginner,006
+Which method runs first in answer.strip().lower?,strip runs first,Code Reading,Beginner,006
+Which method runs second in answer.strip().lower?,lower runs second,Code Reading,Beginner,006
+What does normalizing input mean?,Converting user input into a consistent format before checking it,Concept,Beginner,006
+Why normalize user input?,To make comparisons more reliable,Concept,Beginner,006
+How should the Library app clean a yes or no response?,Use strip and lower,Project,Beginner,006
+How should the Library app format a reader name?,Use strip and title,Project,Beginner,006
+What should Yes become after lower?,yes,Scenario,Beginner,006
+What should space yes space become after strip?,yes,Scenario,Beginner,006
+What should space YES space become after strip and lower?,yes,Scenario,Beginner,006
+Why did Yes fail before Lesson 006?,Because string comparisons are exact and Yes does not equal yes,Scenario,Beginner,006
+What was the project goal for Lesson 006?,Normalize user input before checking it,Project,Beginner,006
