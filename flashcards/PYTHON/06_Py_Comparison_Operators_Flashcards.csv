@@ -1,0 +1,28 @@
+Front,Back,Category,Difficulty,Lesson
+What does a comparison operator do?,It compares values and returns True or False,Concept,Beginner,008
+What does == check?,It checks whether two values are equal,Concept,Beginner,008
+What does != check?,It checks whether two values are not equal,Concept,Beginner,008
+What does > check?,It checks whether the left value is greater than the right value,Concept,Beginner,008
+What does < check?,It checks whether the left value is less than the right value,Concept,Beginner,008
+What does >= check?,It checks whether the left value is greater than or equal to the right value,Concept,Beginner,008
+What does <= check?,It checks whether the left value is less than or equal to the right value,Concept,Beginner,008
+What does = do in Python?,It assigns a value to a variable,Concept,Beginner,008
+What does == do in Python?,It compares two values,Concept,Beginner,008
+What does book_limit = 3 do?,It assigns the value 3 to book_limit,Code Reading,Beginner,008
+What does book_limit == 3 do?,It checks whether book_limit is equal to 3,Code Reading,Beginner,008
+What does 3 == 3 return?,True,Scenario,Beginner,008
+What does 3 == 5 return?,False,Scenario,Beginner,008
+What does 3 != 5 return?,True,Scenario,Beginner,008
+What does 3 != 3 return?,False,Scenario,Beginner,008
+What does 5 > 3 return?,True,Scenario,Beginner,008
+What does 2 > 3 return?,False,Scenario,Beginner,008
+What does 2 < 3 return?,True,Scenario,Beginner,008
+What does 3 >= 3 return?,True,Scenario,Beginner,008
+What does 3 <= 3 return?,True,Scenario,Beginner,008
+Why is >= different from >?,>= accepts equal values as true,Concept,Beginner,008
+Why is <= different from <?,<= accepts equal values as true,Concept,Beginner,008
+What does requested_books > checkout_limit check?,It checks whether the user requested too many books,Project,Beginner,008
+Why use checkout_limit instead of the number 3 directly?,The variable name explains what the number means,Design,Beginner,008
+Why use checkout_limit inside the print message?,The message updates automatically if the limit changes,Design,Beginner,008
+What was the project goal for Lesson 008?,Use comparison operators with a named checkout limit,Project,Beginner,008
+What is the main rule from Lesson 008?,Use = for assignment and == for comparison,Concept,Beginner,008
