@@ -1,0 +1,29 @@
+Front,Back,Category,Difficulty,Lesson
+What does input always return?,A string,Concept,Beginner,007
+What does int do?,It converts a value into an integer,Concept,Beginner,007
+What does float do?,It converts a value into a decimal number,Concept,Beginner,007
+What does str do?,It converts a value into a string,Concept,Beginner,007
+What is an integer?,A whole number,Concept,Beginner,007
+What is a float?,A decimal number,Concept,Beginner,007
+What is a string number?,A number stored as text,Concept,Beginner,007
+Is 3 the same as quote 3 quote in Python?,No 3 is an integer and quote 3 quote is a string,Concept,Beginner,007
+Why must numeric input be converted?,Because input returns text and text cannot be used as a number until converted,Concept,Beginner,007
+What function converts quote 3 quote into 3?,int,Command,Beginner,007
+What function converts quote 1.50 quote into 1.5?,float,Command,Beginner,007
+What function converts 20 into quote 20 quote?,str,Command,Beginner,007
+What data type does int return?,Integer,Concept,Beginner,007
+What data type does float return?,Float,Concept,Beginner,007
+What data type does str return?,String,Concept,Beginner,007
+Why does requested_books greater than 3 fail if requested_books came from input?,Because requested_books is a string and 3 is an integer,Scenario,Beginner,007
+How do you convert requested_books before comparing it to 3?,requested_books = int(requested_books),Code Reading,Beginner,007
+What happens when int receives quote five quote?,It raises a ValueError,Scenario,Beginner,007
+What happens when int receives quote 5.5 quote?,It raises a ValueError because 5.5 is not a whole number,Scenario,Beginner,007
+What should you use to convert quote 5.5 quote?,float,Scenario,Beginner,007
+What does ValueError mean during type conversion?,Python could not convert the value into the requested type,Concept,Beginner,007
+Are int float and str functions or methods?,Functions,Concept,Beginner,007
+What is the project use for int in Lesson 007?,Convert the requested book count into a number,Project,Beginner,007
+Where should the requested book count question go in the Library project?,Inside the yes branch,Project,Beginner,007
+Why should the requested book count question go inside the yes branch?,So users who say no are not asked how many books they want,Project,Beginner,007
+What should the Library app do if requested books is greater than 3?,Print that the user can only check out 3 books,Project,Beginner,007
+What should the Library app do if requested books is 3 or less?,Approve the checkout amount,Project,Beginner,007
+What is the main rule from Lesson 007?,Convert numeric input before doing math or numeric comparisons,Concept,Beginner,007

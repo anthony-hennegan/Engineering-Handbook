@@ -1,17 +1,19 @@
-user_name = input("What is your name? ")
+book_count = input("How many books would you like to check out? ")
+book_count = int(book_count)
 
-cleaned_user_name = user_name.strip().title()
-print(f"Hello {cleaned_user_name}")
-
-view_book_selection = input("Would you like to view our book selection? ")
-cleaned_selection_response = view_book_selection.strip().lower()
-
-if cleaned_selection_response == "yes":
-    print("The books will be shown")
-elif cleaned_selection_response == "no":
-    print("No worries. Have a nice day.")
+if book_count > 3:
+    print("You can only check out 3 books.")
 else:
-    print("Please type yes or no")
+    print("Checkout amount is approved.")
 
-# String methods must be stored into a variable because they do not change the original string.
-# They create a new string.
+late_fee_amount = input("How much is the late fee?" )
+late_fee_amount = float(late_fee_amount)
+print(late_fee_amount)
+
+num = 20
+num = str(num)
+print(num)
+print(type(book_count))
+print(type(late_fee_amount))
+print(type(num))
+
