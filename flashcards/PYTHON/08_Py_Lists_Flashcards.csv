@@ -1,0 +1,26 @@
+Front,Back,Category,Difficulty,Lesson
+What is a list?,A collection of values stored in one variable,Concept,Beginner,010
+Why are lists useful?,They let a program store and work with multiple related values,Concept,Beginner,010
+How do you create a list of books?,books = ["The Hobbit" "Dune" "The Alchemist"],Code Reading,Beginner,010
+What symbol is used to create a list?,Square brackets,Concept,Beginner,010
+Do list indexes start at 0 or 1?,0,Concept,Beginner,010
+What does books[0] access?,The first item in the list,Code Reading,Beginner,010
+What does books[1] access?,The second item in the list,Code Reading,Beginner,010
+What does books[2] access?,The third item in the list,Code Reading,Beginner,010
+Why do list indexes start at 0?,The first item is at the starting position of the list,Concept,Beginner,010
+What does append do to a list?,It adds an item to the end of the list,Concept,Beginner,010
+How do you add The Hobbit to books?,books.append("The Hobbit"),Code Reading,Beginner,010
+Does append create a new list or change the existing list?,It changes the existing list,Concept,Beginner,010
+What does len do?,It counts how many items are in a collection,Concept,Beginner,010
+What does len(books) return?,The number of items in the books list,Code Reading,Beginner,010
+Why is len useful in the Library project?,It can calculate the number of books from the actual list,Project,Beginner,010
+What does remove do to a list?,It removes a specific value from the list,Concept,Beginner,010
+How do you remove Dune from books?,books.remove("Dune"),Code Reading,Beginner,010
+What happens if you access a list index that does not exist?,Python raises an IndexError,Scenario,Beginner,010
+What happens if you remove a value that is not in the list?,Python raises a ValueError,Scenario,Beginner,010
+What does IndexError mean with lists?,You tried to access a list position that does not exist,Concept,Beginner,010
+What does ValueError mean with remove?,You tried to remove a value that is not in the list,Concept,Beginner,010
+Why is books better than book_1 book_2 and book_3?,A list keeps related values together in one collection,Design,Beginner,010
+What was the project goal for Lesson 010?,Store book titles in a list and calculate book_count with len,Project,Beginner,010
+Why should book_count use len(books)?,It updates automatically when the list changes,Design,Beginner,010
+What is the main rule from Lesson 010?,Use lists to store multiple related values in one variable,Concept,Beginner,010
