@@ -1,0 +1,28 @@
+Front,Back,Category,Difficulty,Lesson
+What does and do?,It requires both conditions to be True,Concept,Beginner,009
+What does or do?,It requires at least one condition to be True,Concept,Beginner,009
+What does not do?,It reverses a boolean value,Concept,Beginner,009
+What does True and True return?,True,Scenario,Beginner,009
+What does True and False return?,False,Scenario,Beginner,009
+What does False and True return?,False,Scenario,Beginner,009
+What does False and False return?,False,Scenario,Beginner,009
+What does True or True return?,True,Scenario,Beginner,009
+What does True or False return?,True,Scenario,Beginner,009
+What does False or True return?,True,Scenario,Beginner,009
+What does False or False return?,False,Scenario,Beginner,009
+What does not True return?,False,Scenario,Beginner,009
+What does not False return?,True,Scenario,Beginner,009
+When should you use and?,Use and when all conditions must be true,Concept,Beginner,009
+When should you use or?,Use or when at least one condition must be true,Concept,Beginner,009
+When should you use not?,Use not when you want to check the reverse of a boolean condition,Concept,Beginner,009
+What does is_open and requested_books <= checkout_limit check?,It checks that the library is open and the request is within the limit,Project,Beginner,009
+What does answer == yes or answer == y allow?,It allows yes or y to run the same code block,Project,Beginner,009
+What does answer == no or answer == n allow?,It allows no or n to run the same code block,Project,Beginner,009
+What does if not is_open mean?,If the library is not open,Code Reading,Beginner,009
+Why is and useful in the Library project?,It lets checkout require both an open library and an allowed book count,Project,Beginner,009
+Why is or useful in the Library project?,It lets the program accept multiple valid user responses,Project,Beginner,009
+Why is not useful in the Library project?,It lets the program handle the closed-library case clearly,Project,Beginner,009
+What was the project goal for Lesson 009?,Use logical operators to combine checkout conditions,Project,Beginner,009
+What is the main rule for and?,All conditions must be True,Concept,Beginner,009
+What is the main rule for or?,At least one condition must be True,Concept,Beginner,009
+What is the main rule for not?,It reverses True and False,Concept,Beginner,009
