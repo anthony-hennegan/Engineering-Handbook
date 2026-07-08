@@ -1,14 +1,30 @@
-books = ['Dune', 'Harry Potter', 'A walk to Remember', 'The Alchemist', 'The Hobbit']
-print(books[0])
-print(books[-1])
-books.append('New book')
-print(len(books))
-books.remove('New book')
-print(books)
-first_book_response = input("Would you like to see the first book? ")
-first_book_response = first_book_response.strip().lower()
+books = ['book1', 'book2', 'book3', 'book4']
+print("Bailey's Book Selection")
 
-if first_book_response == "yes" or first_book_response == "y":
-    print(books[0])
-elif first_book_response == "no" or first_book_response =="n":
-    print("Goodbye")
+for book in books:
+    print(book)
+print("Done")
+print("----------------------------")
+print("")
+
+books.append("Dune")
+for book in books:
+    print(book)
+print("----------------------------")
+print("")
+
+book_count = 0
+for book in books:
+    book_count += 1
+print(book_count)
+print("----------------------------")
+print("")
+
+for book in books:
+    if book == "Dune":
+        print("Found Dune.")
+        
+# A loop variable is a name that represents the current item the list being iterated through.
+# The code block in the loop will run only using the current item, and then move on to the next item.
+
+# If a condition is created inside a loop and has a false result the code block will be skipped.

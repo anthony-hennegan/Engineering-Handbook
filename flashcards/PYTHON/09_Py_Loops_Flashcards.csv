@@ -1,0 +1,31 @@
+Front,Back,Category,Difficulty,Lesson
+What does a loop do?,It repeats a block of code,Concept,Beginner,011
+What does a for loop do?,It repeats once for each item in a collection,Concept,Beginner,011
+What is the basic for loop pattern?,for item in collection:,Syntax,Beginner,011
+What symbol is required at the end of a for loop line?,A colon,Syntax,Beginner,011
+What does indentation control in a loop?,It controls which code repeats,Concept,Beginner,011
+What is a loop variable?,A temporary name that refers to the current item,Concept,Beginner,011
+In for book in books what is the loop variable?,book,Code Reading,Beginner,011
+In for book in books what is the collection?,books,Code Reading,Beginner,011
+What does for book in books mean?,For each item in books temporarily call it book,Code Reading,Beginner,011
+What happens after one loop pass finishes?,Python moves to the next item in the collection,Concept,Beginner,011
+What happens when the loop reaches the last item?,Python finishes the loop and continues after the loop block,Concept,Beginner,011
+What happens if a for loop iterates over an empty list?,The loop body runs zero times,Concept,Beginner,011
+What does this print first for book in books print book?,The first item in books,Code Reading,Beginner,011
+Why is a loop better than printing books by index?,It works even when the list size changes,Concept,Beginner,011
+What happens if a line is not indented under a loop?,It does not repeat,Concept,Beginner,011
+What does print Done after a loop do?,It prints once after the loop finishes,Code Reading,Beginner,011
+How do you print every book in a books list?,for book in books: print(book),Syntax,Beginner,011
+What does book refer to during the first loop pass?,The first item in the list,Code Reading,Beginner,011
+What does book refer to during the second loop pass?,The second item in the list,Code Reading,Beginner,011
+Can an if statement be placed inside a for loop?,Yes,Concept,Beginner,011
+What happens when an if condition inside a loop is False?,Python skips that if block and moves on,Concept,Beginner,011
+Does an if statement inside a loop require an else?,No,Concept,Beginner,011
+What does this pattern do count = 0 then for item in items count += 1?,It counts how many items are in the collection,Pattern,Beginner,011
+What does count += 1 do?,It adds 1 to the current value of count,Code Reading,Beginner,011
+What does this pattern do for item in items if item == target print Found?,It searches for a matching item,Pattern,Beginner,011
+Why does Found Dune only print for Dune?,Because only Dune makes the condition True,Code Reading,Beginner,011
+What happens to non matching books in a search loop?,Python skips the if block for those books,Concept,Beginner,011
+What is a common error when writing a for loop?,Forgetting the colon,Syntax,Beginner,011
+What is another common error when writing a for loop?,Forgetting indentation,Syntax,Beginner,011
+Why are loops useful with lists?,They let code run once for every list item,Concept,Beginner,011

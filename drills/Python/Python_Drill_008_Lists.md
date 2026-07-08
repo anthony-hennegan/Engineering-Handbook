@@ -1,4 +1,4 @@
-# Python Drill 008 - Lists
+# Lists
 
 ## Objective
 

@@ -1,4 +1,4 @@
-# Lesson 011 - Loops
+# Loops
 
 ## Purpose
 
