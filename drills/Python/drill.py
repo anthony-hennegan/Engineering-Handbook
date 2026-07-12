@@ -1,40 +1,24 @@
-books = [
-    {
-        "title": "Book1",
-        "author": "Author1",
-        "checked_out": True
-    },
-    {
-        "title": "Book2",
-        "author": "Author2",
-        "checked_out": False
-    },
-    {
-        "title": "Book3",
-        "author": "Author3",
-        "checked_out": False
-    }
-]
+def show_message():
+    print("Hello world.")
+show_message()
 
-checkout_title = "Book4"
-found_book = False
-for book in books:
-    if book["title"] == checkout_title:
-        found_book = True
-        if book["checked_out"]:
-            print(f"{book['title']} is not available.")
-        else:
-            book["checked_out"] = True
-            print(f"{book["title"]} is now checked out.")
-            
-if not found_book:
-    print(f"{checkout_title} was not found.")
+def show_welcome_message():
+    print("Welcome to Bailey's Books")
+show_welcome_message()
 
-print("Library Status:")
-for book in books:
-    if book["checked_out"]:
-        print(f"{book['title']} is checked out")
-    else: 
-        print(f"{book['title']} is available.")
-    
+def greet_reader(name):
+    print(f"Hello {name}")
+greet_reader("Anthony")
+greet_reader("tony")
 
+books = ["Book1", "Book2", "Book3"]
+
+def display_books(book_list):
+    for book in book_list:
+        print(book)
+display_books(books)
+
+# A function is reusable block of code.
+# A parameter is a placeholder in a fuction.
+# An argument is the value used when calling the function.
+# When a function is written it is only being defined. It must be called for the functions code block to execute.
