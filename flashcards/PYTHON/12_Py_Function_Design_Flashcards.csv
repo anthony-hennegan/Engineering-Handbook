@@ -1,0 +1,11 @@
+Front,Back,Category,Difficulty,Lesson
+"What is the main rule of function design?","One function should have one clear responsibility.","Concept","Easy","Lesson 015 - Function Design"
+"What should a function name describe?","The action the function performs.","Practical Pattern","Easy","Lesson 015 - Function Design"
+"When should a function use print?","When its job is to display output to the user.","Practical Pattern","Easy","Lesson 015 - Function Design"
+"When should a function use return?","When it produces a value the program needs later.","Practical Pattern","Easy","Lesson 015 - Function Design"
+"Why should format_name return a value?","The cleaned name needs to be stored and used later.","Code Reading","Easy","Lesson 015 - Function Design"
+"Why should greet_reader print instead of return?","Its job is to display a greeting to the user.","Code Reading","Easy","Lesson 015 - Function Design"
+"What kind of value should an is_available function return?","A Boolean value.","Practical Pattern","Easy","Lesson 015 - Function Design"
+"What does return not book[""checked_out""] mean?","It returns True when checked_out is False and False when checked_out is True.","Code Reading","Medium","Lesson 015 - Function Design"
+"What is a sign that a function is doing too much?","The function name becomes vague or hard to describe clearly.","Concept","Medium","Lesson 015 - Function Design"
+"Why separate format_name and greet_reader?","One formats data and the other displays output.","Code Reading","Easy","Lesson 015 - Function Design"
