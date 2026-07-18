@@ -10,11 +10,12 @@ Each lesson should follow the standard workflow:
 
 1. Introduce concept
 2. Complete exercise
-3. Complete drill
-4. Apply to project
-5. Create flashcards
-6. Commit Knowledge repo
-7. Commit Project repo
+3. Apply to project
+4. Create flashcards when needed
+5. Commit Knowledge repo
+6. Commit Project repo
+
+A separate no-notes drill should only be added when the exercise reveals a gap that needs targeted practice.
 
 ---
 
@@ -66,7 +67,6 @@ Create basic application state for the Library app.
 library_name = "Bailey's Books and Bargains"
 librarian_name = "Anthony"
 book_count = 20
-is_open = True
 
 print(library_name)
 ```
@@ -177,13 +177,13 @@ Combine multiple conditions.
 ### Example
 
 ```python
-is_open = True
 has_books = True
+request_is_valid = True
 
-if is_open and has_books:
-    print("The library is open and books are available.")
+if has_books and request_is_valid:
+    print("Checkout is available.")
 else:
-    print("Checkout is not available right now.")
+    print("Checkout is not available.")
 ```
 
 ---
@@ -234,7 +234,7 @@ Store related information about one book.
 book = {
     "title": "The Hobbit",
     "author": "J.R.R. Tolkien",
-    "is_checked_out": False
+    "checked_out": False
 }
 
 print(book["title"])
@@ -255,12 +255,12 @@ books = [
     {
         "title": "The Hobbit",
         "author": "J.R.R. Tolkien",
-        "is_checked_out": False
+        "checked_out": False
     },
     {
         "title": "Dune",
         "author": "Frank Herbert",
-        "is_checked_out": False
+        "checked_out": False
     }
 ]
 
@@ -310,7 +310,7 @@ def show_books(books):
 
 ### Project Use
 
-Split the project into multiple files.
+Split the project into multiple Python files.
 
 ### Example
 
@@ -346,33 +346,161 @@ except ValueError:
 
 ---
 
-## Lesson 018 - Main Program Loop
+## Lesson 018 - Main Program Loop and Input Validation
 
 ### Project Use
 
-Keep the app running until the user chooses to quit.
+Keep asking until the user enters valid input or chooses to leave.
 
 ### Example
 
 ```python
 while True:
-    choice = input("Choose an option or type quit: ").strip().lower()
+    choice = input("Would you like to view books? ").strip().lower()
 
-    if choice == "quit":
+    if choice == "yes":
+        print("Here are the books.")
+        break
+    elif choice == "no":
+        print("Have a nice day.")
         break
     else:
-        print("You chose:", choice)
+        print("Please type yes or no.")
 ```
 
 ---
 
-# Phase 3 - Data Persistence
+# Phase 3 - Application Features
 
-## Lesson 019 - Reading Files
+## Lesson 019 - Searching Data
 
 ### Project Use
 
-Load saved book data from a file.
+Find a book by its title or author.
+
+### Example
+
+```python
+search_title = input("Enter a book title: ").strip().lower()
+found_book = None
+
+for book in books:
+    if book["title"].lower() == search_title:
+        found_book = book
+        break
+```
+
+---
+
+## Lesson 020 - Checking Out Books
+
+### Project Use
+
+Allow the reader to select an available book and mark it as checked out.
+
+### Example
+
+```python
+if not book["checked_out"]:
+    book["checked_out"] = True
+    print("Book checked out.")
+else:
+    print("That book is already checked out.")
+```
+
+---
+
+## Lesson 021 - Returning Books
+
+### Project Use
+
+Allow the reader to return a checked-out book.
+
+### Example
+
+```python
+if book["checked_out"]:
+    book["checked_out"] = False
+    print("Book returned.")
+else:
+    print("That book is not checked out.")
+```
+
+---
+
+## Lesson 022 - Adding Books
+
+### Project Use
+
+Allow the librarian to add a new book record to the catalog.
+
+### Example
+
+```python
+new_book = {
+    "title": "Foundation",
+    "author": "Isaac Asimov",
+    "checked_out": False
+}
+
+books.append(new_book)
+```
+
+---
+
+## Lesson 023 - Removing Books
+
+### Project Use
+
+Allow the librarian to remove a book from the catalog.
+
+### Example
+
+```python
+books.remove(book_to_remove)
+```
+
+---
+
+## Lesson 024 - Multiple Menus
+
+### Project Use
+
+Turn the project into a menu-driven command-line application.
+
+### Example
+
+```text
+1. View books
+2. Search books
+3. Check out a book
+4. Return a book
+5. Add a book
+6. Remove a book
+7. Quit
+```
+
+Example loop:
+
+```python
+while True:
+    choice = input("Choose an option: ")
+
+    if choice == "1":
+        display_available_books(books)
+    elif choice == "7":
+        break
+```
+
+---
+
+# Phase 4 - Data Persistence
+
+## Lesson 025 - Reading Files
+
+### Project Use
+
+Load saved data from a file.
 
 ### Example
 
@@ -385,11 +513,11 @@ print(contents)
 
 ---
 
-## Lesson 020 - Writing Files
+## Lesson 026 - Writing Files
 
 ### Project Use
 
-Save book data to a file.
+Save data to a file.
 
 ### Example
 
@@ -400,7 +528,7 @@ with open("books.txt", "w") as file:
 
 ---
 
-## Lesson 021 - JSON
+## Lesson 027 - JSON
 
 ### Project Use
 
@@ -417,11 +545,11 @@ with open("books.json", "w") as file:
 
 ---
 
-## Lesson 022 - Data Validation
+## Lesson 028 - Data Validation
 
 ### Project Use
 
-Check that book records have required information.
+Check that loaded or newly created book records contain valid information.
 
 ### Example
 
@@ -437,9 +565,9 @@ if book["title"] == "":
 
 ---
 
-# Phase 4 - Object-Oriented Programming
+# Phase 5 - Object-Oriented Programming
 
-## Lesson 023 - Classes and Objects
+## Lesson 029 - Classes and Objects
 
 ### Project Use
 
@@ -456,11 +584,11 @@ book = Book()
 
 ---
 
-## Lesson 024 - Constructors
+## Lesson 030 - Constructors
 
 ### Project Use
 
-Create book objects with title and author.
+Create book objects with title and author information.
 
 ### Example
 
@@ -475,7 +603,7 @@ book = Book("The Hobbit", "J.R.R. Tolkien")
 
 ---
 
-## Lesson 025 - Methods
+## Lesson 031 - Methods
 
 ### Project Use
 
@@ -488,15 +616,15 @@ class Book:
     def __init__(self, title, author):
         self.title = title
         self.author = author
-        self.is_checked_out = False
+        self.checked_out = False
 
     def check_out(self):
-        self.is_checked_out = True
+        self.checked_out = True
 ```
 
 ---
 
-## Lesson 026 - Multiple Classes
+## Lesson 032 - Multiple Classes
 
 ### Project Use
 
@@ -515,28 +643,28 @@ class Library:
 
 ---
 
-# Phase 5 - Testing and Quality
+# Phase 6 - Testing and Quality
 
-## Lesson 027 - Basic Testing
+## Lesson 033 - Basic Testing
 
 ### Project Use
 
-Use simple assertions to check logic.
+Use simple assertions to check project logic.
 
 ### Example
 
 ```python
 def is_available(book):
-    return not book["is_checked_out"]
+    return not book["checked_out"]
 
-book = {"title": "Dune", "is_checked_out": False}
+book = {"title": "Dune", "checked_out": False}
 
-assert is_available(book) == True
+assert is_available(book) is True
 ```
 
 ---
 
-## Lesson 028 - Pytest
+## Lesson 034 - Pytest
 
 ### Project Use
 
@@ -546,17 +674,18 @@ Create test files for project functions.
 
 ```python
 def test_book_is_available():
-    book = {"title": "Dune", "is_checked_out": False}
-    assert book["is_checked_out"] == False
+    book = {"title": "Dune", "checked_out": False}
+
+    assert book["checked_out"] is False
 ```
 
 ---
 
-## Lesson 029 - Refactoring
+## Lesson 035 - Refactoring
 
 ### Project Use
 
-Improve code without changing behavior.
+Improve code without changing its behavior.
 
 ### Example
 
@@ -577,11 +706,11 @@ def print_book(book):
 
 ---
 
-## Lesson 030 - Debugging
+## Lesson 036 - Debugging
 
 ### Project Use
 
-Read errors and isolate problems.
+Read errors, inspect state, and isolate problems.
 
 ### Example
 
@@ -592,13 +721,13 @@ print("Debug title:", book["title"])
 
 ---
 
-# Phase 6 - Final Release
+# Phase 7 - Final Release
 
-## Lesson 031 - Requirements Review
+## Lesson 037 - Requirements Review
 
 ### Project Use
 
-Compare the finished app against `REQUIREMENTS.md`.
+Compare the finished application against `REQUIREMENTS.md`.
 
 ### Example
 
@@ -609,7 +738,7 @@ Status: Complete.
 
 ---
 
-## Lesson 032 - Command-Line Interface Polish
+## Lesson 038 - Command-Line Interface Polish
 
 ### Project Use
 
@@ -626,7 +755,7 @@ Make menus and messages easier to use.
 
 ---
 
-## Lesson 033 - Project Documentation
+## Lesson 039 - Project Documentation
 
 ### Project Use
 
@@ -634,7 +763,7 @@ Update the README with setup and usage instructions.
 
 ### Example
 
-```markdown
+````markdown
 ## How to Run
 
 Run the project from the terminal:
@@ -642,11 +771,11 @@ Run the project from the terminal:
 ```bash
 python3 main.py
 ```
-```
+````
 
 ---
 
-## Lesson 034 - Final Refactor
+## Lesson 040 - Final Refactor
 
 ### Project Use
 
@@ -664,7 +793,7 @@ menu_choice = input("Choice: ")
 
 ---
 
-## Lesson 035 - Final Project Release
+## Lesson 041 - Final Project Release
 
 ### Project Use
 
@@ -692,8 +821,14 @@ By the end of Project 001, the Library CLI App should include:
 - Dictionaries
 - Loops
 - Functions
+- Multiple Python modules
+- Search
+- Checkout and return features
+- Catalog management
+- Menu-driven navigation
 - File persistence
 - JSON storage
+- Data validation
 - Error handling
 - Tests
 - Documentation
