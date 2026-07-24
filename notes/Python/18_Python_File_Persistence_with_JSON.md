@@ -1,3 +1,4 @@
+````markdown
 # Lesson 025 — File Persistence with JSON
 
 # What Problem Does File Persistence Solve?
@@ -20,9 +21,9 @@ This list only exists while the program is running.
 
 When Python exits:
 
-- RAM is cleared
-- Variables disappear
-- The books list is lost
+- RAM is cleared.
+- Variables disappear.
+- The books list is lost.
 
 Every time the program starts, it creates a brand new list.
 
@@ -44,9 +45,9 @@ Think of your computer as having two places for data.
       is running                exits
 ```
 
-Your variables live in RAM.
+Variables live in RAM.
 
-Your files live on disk.
+Files live on disk.
 
 The program moves data between them.
 
@@ -81,7 +82,7 @@ Start Program
 Load books.json
       │
       ▼
-Create books list
+Create books list in RAM
       │
       ▼
 User changes books
@@ -97,19 +98,19 @@ Exit
 
 # Why JSON?
 
-Python needs a way to save lists and dictionaries into a text file.
+Python needs a way to store lists and dictionaries as text.
 
 The most common format is JSON.
 
 JSON stands for:
 
-JavaScript Object Notation
+**JavaScript Object Notation**
 
-Even though it originated with JavaScript, nearly every programming language supports it.
+Nearly every programming language supports it.
 
 ---
 
-# JSON Looks Very Similar to Python
+# JSON Looks Like Python
 
 Python:
 
@@ -133,7 +134,7 @@ JSON:
 ]
 ```
 
-Notice the differences:
+Important differences:
 
 Python:
 
@@ -147,53 +148,51 @@ JSON:
 - false
 - null
 
-Everything else is nearly identical.
-
 ---
 
 # The json Module
 
-Python includes a built-in module named:
+Import it with:
 
 ```python
 import json
 ```
 
-It converts between:
+It translates between:
 
-Python objects
-
-↓
-
-JSON text
+```
+Python Objects
+      │
+      ▼
+JSON Text
+```
 
 and
 
-JSON text
-
-↓
-
-Python objects
+```
+JSON Text
+      │
+      ▼
+Python Objects
+```
 
 ---
 
 # Reading a JSON File
 
-Basic pattern:
-
 ```python
 import json
 
-with open("books.json", "r") as file:
+with open("books.json", "r", encoding="utf-8") as file:
     books = json.load(file)
 ```
 
-Read it from the bottom upward:
+Read this from the bottom upward:
 
 1. Open the file.
-2. Give the file to json.load().
+2. Give the file to `json.load()`.
 3. Convert JSON into Python objects.
-4. Store the result in books.
+4. Store the result in `books`.
 
 After this:
 
@@ -207,24 +206,20 @@ returns
 list
 ```
 
-The JSON file disappears from your thinking.
-
-You simply have a normal Python list again.
+The rest of your program works with a normal Python list.
 
 ---
 
 # Writing a JSON File
 
-Pattern:
-
 ```python
 import json
 
-with open("books.json", "w") as file:
-    json.dump(books, file)
+with open("books.json", "w", encoding="utf-8") as file:
+    json.dump(books, file, indent=4)
 ```
 
-Read this as:
+Read it as:
 
 Take the Python list
 
@@ -234,33 +229,138 @@ Convert it into JSON
 
 ↓
 
-Write it into the file.
+Write it to the file.
 
 ---
 
-# The with Statement
+# Understanding `with open(...)`
 
-Notice both examples use:
-
-```python
-with open(...) as file:
-```
-
-Why?
-
-Without `with`, you must remember to close the file yourself.
+Example:
 
 ```python
-file = open("books.json")
-
-...
-
-file.close()
+with open("books.json", encoding="utf-8") as file:
+    books = json.load(file)
 ```
 
-Using `with` automatically closes the file when the block ends.
+Break it apart:
 
-This is safer and is the standard Python style.
+```
+with
+│
+├── open(...)
+│      Opens the file.
+│
+├── as file
+│      Stores the opened file in the variable named file.
+│
+└── :
+       Everything inside the block uses the open file.
+```
+
+When the block ends:
+
+- The file is automatically closed.
+- The `books` variable still exists because it now lives in RAM.
+
+The file closes.
+
+The data does not.
+
+---
+
+# Why Open the File Twice?
+
+Typical program flow:
+
+```
+Open file
+      │
+Read JSON
+      │
+Close file
+      │
+Modify books in RAM
+      │
+Open file again
+      │
+Write JSON
+      │
+Close file
+```
+
+We do not keep the file open because we only need it while reading or writing.
+
+Good rule:
+
+> Open a file late. Close it early.
+
+---
+
+# What Is a File Handle?
+
+The variable:
+
+```python
+file
+```
+
+is **not** the file itself.
+
+It is a file handle.
+
+Think of it like a library checkout ticket.
+
+```
+books.json
+      ▲
+      │
+ Operating System
+      ▲
+      │
+File Handle
+      ▲
+      │
+Python
+```
+
+Python talks to the operating system through the file handle.
+
+---
+
+# The Operating System's Role
+
+Python does not read the hard drive directly.
+
+Instead:
+
+```
+Python
+    │
+    ▼
+Operating System
+    │
+    ▼
+File System
+    │
+    ▼
+Disk
+```
+
+When Python calls:
+
+```python
+open("books.json")
+```
+
+it asks the operating system for access to the file.
+
+The operating system manages:
+
+- permissions
+- hardware
+- open files
+- file locations
+- reading and writing
 
 ---
 
@@ -276,9 +376,9 @@ Read an existing file.
 
 Write to a file.
 
-Creates a new file if it doesn't exist.
+Creates a new file if needed.
 
-Completely replaces existing contents.
+Replaces existing contents.
 
 
 "a"
@@ -286,65 +386,255 @@ Completely replaces existing contents.
 Append to the end of a file.
 ```
 
-For this project, we will mostly use:
+Most projects primarily use:
 
-- "r"
-- "w"
+- `"r"`
+- `"w"`
+
+---
+
+# Functions Return Values
+
+Every function returns something.
+
+Some useful examples:
+
+```python
+name = input("Name: ")
+```
+
+returns a string.
+
+```python
+length = len(name)
+```
+
+returns an integer.
+
+```python
+books = load_books()
+```
+
+returns a list.
+
+Even:
+
+```python
+print("Hello")
+```
+
+returns a value.
+
+That value is:
+
+```python
+None
+```
+
+---
+
+# Function vs Function Call
+
+These are different.
+
+```python
+function
+```
+
+Refers to the function itself.
+
+Nothing executes.
+
+```python
+function()
+```
+
+Calls the function.
+
+Everything inside runs.
+
+The returned value becomes the value of the expression.
+
+---
+
+# Functions as Expressions
+
+Python evaluates function calls before continuing.
+
+These two examples are equivalent.
+
+```python
+if checkout_book(title, books):
+    save_books(books)
+```
+
+```python
+result = checkout_book(title, books)
+
+if result:
+    save_books(books)
+```
+
+Execution order:
+
+```
+Call function
+
+↓
+
+Run its code
+
+↓
+
+Receive return value
+
+↓
+
+Evaluate the if statement
+```
+
+The function always runs.
+
+The `if` uses its return value.
+
+---
+
+# Truthy and Falsy Values
+
+Python converts values to `True` or `False` in conditions.
+
+Falsy values:
+
+```python
+False
+None
+0
+0.0
+""
+[]
+{}
+set()
+```
+
+Most other values are truthy.
+
+Examples:
+
+```python
+23
+-5
+"Python"
+[1, 2]
+{"title": "Dune"}
+```
+
+Python effectively evaluates:
+
+```python
+bool(value)
+```
+
+inside an `if`.
+
+---
+
+# `return` vs `break`
+
+`break`
+
+- Stops the loop.
+- Continues the function.
+
+`return`
+
+- Stops the loop.
+- Ends the function immediately.
+- Sends a value back to the caller.
+
+Because `return` exits the function, a `break` after it is unnecessary.
+
+---
+
+# Separation of Responsibilities
+
+The Library project is now organized into modules.
+
+```
+main.py
+    │
+    └── Coordinates the program
+
+catalog.py
+    │
+    └── Book operations
+
+storage.py
+    │
+    └── JSON file persistence
+
+menus.py
+    │
+    └── User interface
+
+utils.py
+    │
+    └── Shared helper functions
+```
+
+Each module has one primary responsibility.
+
+This is called **Separation of Concerns**.
 
 ---
 
 # Mental Model
 
-Think of JSON as a translator.
-
 ```
-Python List
-       │
-       ▼
-json.dump()
-       │
-       ▼
-books.json
-       │
-       ▼
-json.load()
-       │
-       ▼
-Python List
+Disk
+     │
+     ▼
+Load JSON
+     │
+     ▼
+Python List in RAM
+     │
+Modify books
+     │
+     ▼
+Save JSON
+     │
+     ▼
+Disk
 ```
 
-Your program always works with Python objects.
+Your program works with Python objects.
 
-JSON simply translates those objects to and from a file.
+JSON is simply the translator between memory and storage.
 
 ---
 
 # Common Mistakes
 
-Trying to read a file that does not exist.
-
-Forgetting to import json.
-
-Thinking the JSON file is the data.
-
-Forgetting that "w" replaces the entire file.
-
-Editing the JSON file by hand and breaking its formatting.
+- Trying to read a file that does not exist.
+- Forgetting to import `json`.
+- Thinking the JSON file is the program's data instead of a storage format.
+- Forgetting that `"w"` replaces the file contents.
+- Leaving unnecessary `break` statements after `return`.
+- Forgetting that `function` and `function()` mean different things.
 
 ---
 
 # Rules to Remember
 
-Variables live in RAM.
-
-Files live on disk.
-
-JSON stores Python data as text.
-
-json.load() reads JSON into Python objects.
-
-json.dump() writes Python objects into JSON.
-
-Always use `with open(...)` when working with files.
-
-The program should work with Python objects—not directly with the file.
+- Variables live in RAM.
+- Files live on disk.
+- JSON stores Python data as text.
+- `json.load()` reads JSON into Python objects.
+- `json.dump()` writes Python objects to JSON.
+- Always use `with open(...)` for file operations.
+- Every function returns a value.
+- `function()` executes the function.
+- `if function():` evaluates the function's return value.
+- `return` exits the function immediately.
+- Keep responsibilities separated between modules.
+````
