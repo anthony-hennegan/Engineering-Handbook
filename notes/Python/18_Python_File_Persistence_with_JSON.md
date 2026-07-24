@@ -1,4 +1,4 @@
-````markdown
+
 # Lesson 025 — File Persistence with JSON
 
 # What Problem Does File Persistence Solve?
@@ -637,4 +637,3 @@ JSON is simply the translator between memory and storage.
 - `if function():` evaluates the function's return value.
 - `return` exits the function immediately.
 - Keep responsibilities separated between modules.
-````
